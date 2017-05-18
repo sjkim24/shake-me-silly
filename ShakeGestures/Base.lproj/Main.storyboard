@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="N3a-OH-NXc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjl-pH-6Ma">
+                                <rect key="frame" x="28" y="513" width="318" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="4M3-eQ-1zj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me Silly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIU-LI-9al">
+                                <rect key="frame" x="16" y="20" width="343" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="01m-Zh-EQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-Od-cd4">
+                                <rect key="frame" x="28" y="603" width="318" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="joD-SU-20O"/>
+                                </constraints>
+                                <state key="normal" title="Star Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GGK-Lk-1vG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-E0-Ann">
+                                <rect key="frame" x="16" y="132" width="330" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="kOr-5e-mdw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="sZZ-0V-Aao">
+                                <rect key="frame" x="16" y="204" width="343" height="301"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N3a-OH-NXc" secondAttribute="trailing" id="0VW-hR-r1B"/>
+                            <constraint firstItem="sZZ-0V-Aao" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2AU-A1-a07"/>
+                            <constraint firstItem="Lae-E0-Ann" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CvO-44-4R9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N3a-OH-NXc" secondAttribute="bottom" id="Ehu-Eh-nw7"/>
+                            <constraint firstItem="sZZ-0V-Aao" firstAttribute="top" secondItem="Lae-E0-Ann" secondAttribute="bottom" constant="8" id="F89-Kl-Gh8"/>
+                            <constraint firstItem="ShM-Od-cd4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="GfP-PB-F60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lae-E0-Ann" secondAttribute="trailing" constant="13" id="IIt-as-h6o"/>
+                            <constraint firstItem="DIU-LI-9al" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Iwp-AO-HNw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pjl-pH-6Ma" secondAttribute="trailing" constant="13" id="Jdb-ab-er8"/>
+                            <constraint firstItem="sZZ-0V-Aao" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lhb-6o-bvd"/>
+                            <constraint firstItem="N3a-OH-NXc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NPX-bj-NjO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ShM-Od-cd4" secondAttribute="bottom" constant="20" id="TdY-Jk-vVk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ShM-Od-cd4" secondAttribute="trailing" constant="13" id="VKD-Y9-emi"/>
+                            <constraint firstItem="pjl-pH-6Ma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="WWz-f2-dae"/>
+                            <constraint firstItem="ShM-Od-cd4" firstAttribute="top" secondItem="pjl-pH-6Ma" secondAttribute="bottom" constant="31" id="fgY-PH-0sA"/>
+                            <constraint firstItem="pjl-pH-6Ma" firstAttribute="top" secondItem="sZZ-0V-Aao" secondAttribute="bottom" constant="8" id="i7W-Ie-P49"/>
+                            <constraint firstItem="DIU-LI-9al" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iWD-yV-LqX"/>
+                            <constraint firstItem="N3a-OH-NXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jlZ-DE-XyM"/>
+                            <constraint firstItem="DIU-LI-9al" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nTm-JD-4aq"/>
+                            <constraint firstItem="Lae-E0-Ann" firstAttribute="top" secondItem="DIU-LI-9al" secondAttribute="bottom" constant="8" id="od8-V4-PKc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="sZZ-0V-Aao" id="fcR-mw-fGA"/>
+                        <outlet property="scoreLabel" destination="pjl-pH-6Ma" id="sEy-iO-z81"/>
+                        <outlet property="startGameButton" destination="ShM-Od-cd4" id="wrQ-lM-LCk"/>
+                        <outlet property="timerLabel" destination="Lae-E0-Ann" id="kL8-4s-us4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="1920" height="1080"/>
+    </resources>
+</document>
